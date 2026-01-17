@@ -1,0 +1,12 @@
+# NPM Configuration for Design UI Package
+# 
+# For publishing to npm registry:
+# 1. Create an npm account at https://www.npmjs.com
+# 2. Log in: npm login
+# 3. Update this file with your registry URL if using private npm
+# 
+# For GitHub Actions publishing:
+# Set NPM_TOKEN secret in GitHub repository settings
+# 
+# Example for public npm registry (default):
+# //registry.npmjs.org/:_authToken=${NPM_TOKEN}

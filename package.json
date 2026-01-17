@@ -25,6 +25,7 @@
     "lint:fix": "eslint src --ext .ts,.tsx --fix",
     "format": "prettier --write \"src/**/*.{ts,tsx}\" \"stories/**/*.{ts,tsx}\"",
     "type-check": "tsc --noEmit",
+    "release": "semantic-release",
     "prepublishOnly": "npm run build && npm run test"
   },
   "keywords": [
@@ -42,9 +43,16 @@
     "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.6",
+    "@semantic-release/npm": "^12.0.2",
+    "@semantic-release/release-notes-generator": "^14.1.0",
     "@storybook/addon-essentials": "^8.6.14",
     "@storybook/addon-interactions": "^8.6.14",
     "@storybook/react": "^8.6.15",
+    "@storybook/react-vite": "^10.1.11",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.1",
@@ -64,6 +72,7 @@
     "jsdom": "^27.0.1",
     "postcss": "^8.5.6",
     "prettier": "^3.8.0",
+    "semantic-release": "^24.2.9",
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3",
     "vite": "^7.3.1",
