@@ -51,12 +51,14 @@ npm publish --access public
 ## GitHub Setup
 
 ### 1. Create Repository
+
 ```bash
 git remote add origin https://github.com/yourusername/design-ui.git
 git push -u origin main
 ```
 
 ### 2. Configure Secrets
+
 Add these secrets to your GitHub repository settings:
 
 - **NPM_TOKEN**: Your npm registry token
@@ -66,6 +68,7 @@ Add these secrets to your GitHub repository settings:
 - **GITHUB_TOKEN**: (auto-provided by GitHub Actions)
 
 ### 3. Branch Protection
+
 1. Go to Repository Settings → Branches
 2. Add rule for `main` branch:
    - Require status checks to pass before merging
@@ -74,6 +77,7 @@ Add these secrets to your GitHub repository settings:
 ## Publishing to npm
 
 ### First Time Setup
+
 ```bash
 # Log in to npm
 npm login
@@ -86,6 +90,7 @@ npm token create --read-only
 ```
 
 ### Automatic Publishing (via semantic-release)
+
 1. Create conventional commits (`feat:`, `fix:`, etc.)
 2. Push to `main` branch
 3. GitHub Actions will:
@@ -96,6 +101,7 @@ npm token create --read-only
    - Generate changelog
 
 ### Manual Publishing
+
 ```bash
 npm run build
 npm publish --access public
@@ -104,6 +110,7 @@ npm publish --access public
 ## Contributing
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines on:
+
 - Creating feature branches
 - Writing tests
 - Adding new components
@@ -121,15 +128,18 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines on:
 ## Troubleshooting
 
 ### Storybook won't start
+
 - Clear cache: `rm -rf node_modules/.cache`
 - Reinstall: `npm install --legacy-peer-deps`
 - Try: `npx storybook@latest dev`
 
 ### Tests failing
+
 - Clear cache: `npm test -- --clearCache`
 - Check Node version: `node --version` (should be 18+)
 
 ### Build errors
+
 - Check TypeScript: `npm run type-check`
 - Lint: `npm run lint`
 - Ensure all imports are correct
