@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/sammydepoj/design-ui"
+    "url": "https://github.com/sammydepoj/design-ui-test"
   },
   "scripts": {
     "dev": "storybook dev -p 6006",
